@@ -4,7 +4,8 @@
   "description": "This is just me fooling around with node",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ."
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/12jikan/nodeTingz/issues"
   },
-  "homepage": "https://github.com/12jikan/nodeTingz#readme"
+  "homepage": "https://github.com/12jikan/nodeTingz#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9"
+  }
 }
