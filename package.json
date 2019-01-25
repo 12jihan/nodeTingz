@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/12jikan/nodeTingz#readme",
   "dependencies": {
+    "bulma": "^0.7.2",
     "express": "^4.16.4",
     "nodemon": "^1.18.9"
   }
