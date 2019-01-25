@@ -1,0 +1,25 @@
+{
+  "name": "nodetingz",
+  "version": "1.0.0",
+  "description": "This is just me fooling around with node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/12jikan/nodeTingz.git"
+  },
+  "keywords": [
+    "nodetingz",
+    "joke",
+    "stupid",
+    "dummy"
+  ],
+  "author": "Jareem Hoff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/12jikan/nodeTingz/issues"
+  },
+  "homepage": "https://github.com/12jikan/nodeTingz#readme"
+}
