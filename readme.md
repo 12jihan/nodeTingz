@@ -1,1 +1,1 @@
- This is a test to see if I am able to create a git repository form the command line
+ This is just me screwing around with some new things I'm learning in node
