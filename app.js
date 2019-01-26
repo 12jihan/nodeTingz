@@ -1,24 +1,23 @@
-const http = require('http');
-const fs = require('fs');
+const express = require('express');
+const app = express();
 
-const hostname = '127.0.0.1';
-const port = 3000;
+app.use('/')
 
-const server = http.createServer((req, res) => {
-    const url = req.url;
-    
-    if(url === '/' || url === '/home') {
-        const readStream = fs.createReadStream('./static/index.html');
-        res.writeHead(200, {'Content-type': 'text/html'});
-        readStream.pipe(res);
-    }
-    else {
-        const readStream = fs.createReadStream('./static/components/err/err404.html');
-        res.writeHead(404, 'Content-type', 'text/html');
-        readStream.pipe(res);
-    }
+app.get('/', (req, res) => {
+    res.send('Hello World!')
 });
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+app.get('/example', (req, res) => {
+    res.send('Hitting the example route!');
 });
+
+app.get('/example/:name/:age', (req, res) => {
+    const params = req.params;
+
+    console.log(params);
+    console.log(req.query);
+    res.send(params.name + " : " + params.age);
+
+})
+
+app.listen(3000);
